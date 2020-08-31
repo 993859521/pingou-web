@@ -1,0 +1,30 @@
+{% extends "common/layout_main.html" %}
+{% block content %}
+<div class="wrapper wrapper-content">
+                <div class="col-lg-3">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <span class="label label-primary pull-right">总统计</span>
+                            <h5>帖子数</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <h1 class="no-margins">{{ info.tiezi }}</h1>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <span class="label label-primary pull-right">总统计</span>
+                            <h5>会员</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <h1 class="no-margins">{{ info.member }}</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+{% endblock %}

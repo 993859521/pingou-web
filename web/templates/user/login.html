@@ -1,0 +1,30 @@
+{% extends "common/layout_user.html" %}
+{% block content %}
+<div class="loginColumns animated fadeInDown">
+	      <div class="login_box" style="width: 360px;background: #FFFFFF;margin: 0px auto;">
+			<div class="centent">
+				<div class="m-t login_wrap" role="form">
+                    <div class="form-group text-center">
+						<br \>
+                        <h2 class="font-bold">登录</h2>
+                    </div>
+					<div class="form-group">
+						<input type="text" name="login_name" class="form-control" placeholder="请输入登录用户名" style="width: 300px;height: 40px;margin: 20px auto 0 auto; border: solid 1px #CCCCCC;margin-left: 30px;">
+					</div>
+					<div class="form-group">
+						<input type="password" name="login_pwd" class="form-control" placeholder="请输入登录密码" style="width: 300px;height: 40px;margin: 20px auto 0 auto; border: solid 1px #CCCCCC;margin-left: 30px;">
+					</div>
+					<div style="width: 300px;height: 40px;margin:  10px auto;">
+					<button type="button" class="btn btn-primary block full-width m-b do-login" style="width: 300px; height: 40px; margin: 10px auto; width: 100%; height: 100%; border: none; color: #FFFFFF; font-size: 14px; background: #FF7F50;">登录</button>
+                </div>
+			       <br \> <br \>
+			</div>
+			  </div>
+</div>
+
+
+
+{% endblock %}
+{% block js %}
+    <script src="{{ buildStaticUrl('/js/user/login.js')}}"></script>
+{% endblock %}
